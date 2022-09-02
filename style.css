@@ -1,0 +1,166 @@
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: rgba(236, 236, 236, 0.781);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+
+}
+.conversor__container{
+    display: flex;
+    justify-content: space-around;
+    padding: 7px 0;
+}
+.painel{
+    background-color: white;
+    border: solid black 2px;
+    padding: 20px;    
+    width: 70%;
+}
+.description__title{
+    font-size: 2rem;
+    text-align: center;
+
+}
+.description__paragraph{
+    font-size: 1.2rem;
+    line-height: 1.4;
+    text-align: justify;
+}
+.calculator{
+    margin: 0 auto;
+    padding: 15px 0;
+    width: 50%;
+    
+}
+.input-labels{
+    margin-bottom: 15px;
+}
+
+.label-base{
+    display: inline-block;
+    font-size: 1.2rem;
+    position: relative;
+    text-align: right;
+    width: 150px;
+}
+
+.number-base{
+    border-radius: 5px;
+    font-size: 1.2rem;
+    margin-left: 10px;
+    outline: none;
+    width: 55%;
+
+}
+
+.input-labels:nth-of-type(1) .number-base{
+    border: 2px solid #12d312;
+}
+.input-labels:nth-of-type(1) .number-base:focus{
+    border: 2px solid #017a01;
+}
+
+
+
+.input-labels:nth-of-type(2) .number-base{
+    border: 2px solid #00aeff;
+}
+.input-labels:nth-of-type(2) .number-base:focus{
+    border: 2px solid #00557c;
+}
+
+
+.input-labels:nth-of-type(3) .number-base{
+    border: 2px solid #ff1e00;
+}
+.input-labels:nth-of-type(3) .number-base:focus{
+    border: 2px solid #911100;
+}
+
+
+.input-labels:nth-of-type(4) .number-base{
+    border: 2px solid #0011ff;
+}
+.input-labels:nth-of-type(4) .number-base:focus{
+    border: 2px solid #000980;
+}
+
+.number-base::-webkit-outer-spin-button,.number-base::-webkit-inner-spin-button{
+    opacity: 0;
+}
+.mensage-error{    
+    color: #ff1100;
+    opacity: 0;
+    text-align: center;
+
+}
+
+.reference{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.item-link{
+    display: inline;
+}
+@media only screen and (min-device-width: 330px){
+    .content{
+        padding-top: 10px;
+        width: 450px;
+    }
+    .painel{
+        width: 80%;
+    }
+    .description__title{
+        font-size: 1.5rem;
+    }
+    .description__paragraph{
+        font-size: 1rem;
+        line-height: 2;
+    }
+    .calculator{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .input-labels{
+        align-items: center;
+        display: flex;
+    }
+    .label-base{
+        text-align: right;
+        width: 100px;
+    }
+    .mensage-error{
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+
+}
+@media only screen and (min-device-width: 608px){
+    .content{
+        padding-top: 10px;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .painel{
+        width: 60%;
+    }
+    .description__paragraph{
+        font-size: 1rem;
+        line-height: 2.5;
+    }
+    .calculator{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
