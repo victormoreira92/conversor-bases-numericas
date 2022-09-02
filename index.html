@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Conversor Binário em Decimal</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main class="content">
+        <section class="conversor">
+            <div class="conversor__container">
+                <div class="painel">
+                    <!--Area de texto-->
+                    <div class="painel__description">
+                        <h1 class="description__title">Conversão de Bases Numéricas</h1>
+                        <p class="description__paragraph">Para usar essa ferramenta de conversão, você deve digitar um valor númerico em algumas das entrada abaixo, 
+                            sabendo, que o sistema de numeração binário somente aceita apenas valores numéricos entre <b>0</b> e <b>1</b>, o sistema octal só aceita 
+                            valores numéricos entre <b>0</b> e <b>7</b> e o sistema hexadecimal 
+                            aceita valores numéricos entre <b>0</b> e <b>9</b> como também valores entre <b>A</b> e <b>F</b></p>
+                    </div>
+                    <!--Area de cálculo-->
+                    <div class="painel__calculator">
+                        <form class="calculator">
+                            <div class="input-labels">
+                                <label for="binario" class="label-base">Binário:</label>
+                                <input type="number" name="binario" class="number-base" id="bin" data-numeracao="2">    
+                            </div>
+                            <div class="input-labels">
+                                <label for="decimal" class="label-base">Decimal:</label>
+                                <input type="number" name="decimal" class="number-base" id="dec" data-numeracao="10">
+                            </div>
+                          
+                            <div class="input-labels">
+                                <label for="octal" class="label-base">Octal:</label>
+                                <input type="number" name="octal" class="number-base" id="oct" data-numeracao="8">
+                            </div>
+    
+                            <div class="input-labels">
+                                <label for="hexdecimal" class="label-base">Hexdecimal:</label>
+                                <input type="text" name="hexdecimal" class="number-base" id="hex" data-numeracao="16">
+                            </div>                        
+                            <p class="mensage-error">Número inválido digite novamente</p>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>    
+    <footer class="reference"> 
+        <p>Para saber mais sobre <a href="https://dicasdeprogramacao.com.br/as-10-conversoes-numericas-mais-utilizadas-na-computacao/">Conversão de bases numéricas</a> e <a href="https://pt.wikipedia.org/wiki/Convers%C3%A3o_de_base_num%C3%A9rica">Bases numéricas</a></p>
+        <p>Criado por Victor Moreira</p>
+    </footer>
+    <script src="bindec2.js"></script>
+</body>
+</html>
